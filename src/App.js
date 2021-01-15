@@ -1,26 +1,23 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import './App.css'
+import EntryForm from './components/EntryForm'
+import AddForm from './components/AddForm'
+import LotConsole from './components/LotConsole'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+    <div className='App'>
+      <header className='header'>
+        <h1>Automated Parking Lot</h1>
       </header>
+
+      <div className='container'>
+        <EntryForm />
+        <AddForm />
+        <LotConsole />
+      </div>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
